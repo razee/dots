@@ -1,0 +1,1 @@
+/home/razi/.vim/janus/vim/vimrc

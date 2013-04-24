@@ -1,0 +1,16 @@
+
+set t_Co=256
+colorscheme razi
+" disable arrow keys
+map <up> <nop>
+map <down> <nop>
+map <left> <nop>
+map <right> <nop>
+imap <up> <nop>
+imap <down> <nop>
+imap <left> <nop>
+imap <right> <nop>
+nmap <f6> :w <CR> :!python %<CR>
+nmap <f5> :w <CR> :!ruby %<CR>
+":w<CR>:silent !chmod +x %:p<CR>:silent !%:p 2>&1 \| tee ~/.vim/output<CR>:split ~/.vim/output<CR>:redraw!<CR>
+nnoremap <F3> :set hlsearch!<CR>
