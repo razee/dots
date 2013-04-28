@@ -1,4 +1,3 @@
-
 set t_Co=256
 colorscheme razi
 " disable arrow keys
@@ -14,3 +13,5 @@ nmap <f6> :w <CR> :!python %<CR>
 nmap <f5> :w <CR> :!ruby %<CR>
 ":w<CR>:silent !chmod +x %:p<CR>:silent !%:p 2>&1 \| tee ~/.vim/output<CR>:split ~/.vim/output<CR>:redraw!<CR>
 nnoremap <F3> :set hlsearch!<CR>
+"g:multi_cursor_exit_from_visual_mode "(Defaut: 1)
+"g:multi_cursor_exit_from_insert_mode "(Default: 1)
